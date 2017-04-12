@@ -1,4 +1,9 @@
+.gitignore
 .idea
 composer.lock
 *.log
 thinkphp
+.DS_Store
+application/.DS_Store
+application/index/.DS_Store
+

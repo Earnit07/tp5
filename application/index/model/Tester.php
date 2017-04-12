@@ -2,7 +2,7 @@
 namespace app\index\model;
 use think\Db;
 class Tester
-{   
+{
     public $name;
     public $data;
     public function test()
@@ -12,7 +12,7 @@ class Tester
     public function select()
     {
          // 获取数据集
-        $users = Db::table('MyGuests')->select();
+        $users = Db::table('MyGuests')->where('id','<',9)->select();
         $this->data = $users;
         // 获取数据集记录数
         $count = count($users);
