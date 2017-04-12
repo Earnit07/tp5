@@ -12,11 +12,12 @@ class Index
     public function index($name = 'thinkphp')
     {
       	$tester = model('Tester');
-	$tester->name = 'earnit';
-	$tester->select();
-	$data = $tester->data;
-	return view('index',[
+      	$data = $tester->where('id',6)->find();
+//	$tester->name = 'earnit';
+//	$tester->select();
+//	$data = $tester->data;
+	 return view('index',[
 	   'data' => $data,
-	]);
+	 ]);
     }
 }
