@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>hello</title>
+<style type="text/css">
+td{
+    width:50px;
+    height:10px;
+}
+</style>
+</head>
+<body>
+<table border="1">
+    <tr style="background-color:red"><td class="w">id</td><td>firstName</td><td>lastName</td></tr>
+    <br>
+    {volist name="data" id="vo"}
+        <tr>
+            <td><span>{$vo['id']}</span></td>
+            <td>{$vo['firstname']}</td>
+            <td>lastName</td>
+        </tr>
+            <br>
+    {/volist}
+    </table>
+</body>
+</html>
