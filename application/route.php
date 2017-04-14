@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 use think\Route;
 Route::get('find','index/index/database');
-/*
 return [
     '__pattern__' => [
         'name' => '\w+',
@@ -22,4 +21,3 @@ return [
     'hhh/[:name]'	=> 'index/index/hello',
     'select'	=> 'index/index/database',
 ];
-*/
