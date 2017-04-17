@@ -1,3 +1,3 @@
 #!/bin/sh
-cd /home/wwwroot/tp5/
-git pull github master
+cd /home/www/tp5/
+git pull origin master
