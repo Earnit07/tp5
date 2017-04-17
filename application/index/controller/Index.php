@@ -20,4 +20,12 @@ class Index
 	   'data' => $data,
 	 ]);
     }
+    public function ajax()
+    {
+	return view('testajax',[]);
+    }
+    public function getdata()
+    {
+	return ['msg'=>'ajax test!'];
+    }
 }

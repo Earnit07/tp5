@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function test()
+    {
+	alert('this test');
+    }
+function showHint()
+{
+    $.ajax
+	{
+	    type:'GET',
+	    url:"{:url('getdata')}",
+            dataType:'json',
+	    data:{},
+	    success:function(data)
+		{
+		   alert(data.msg);
+		},
+	    error:function()
+	    { alert('reero');}
+	}
+	
+}
+</script>
+</head>
+<body>
+
+<h3>在输入框中尝试输入字母 a:</h3>
+<form action=""> 
+please input your name:<input type="text" id="txt1" onkeyup="test()" />
+</form>
+<input type="button" onclick="function(){alert('test');}" value='show test'/>
+<p>提示信息: <span id="txtHint"></span></p> 
+
+</body>
+</html>
