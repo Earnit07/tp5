@@ -12,10 +12,10 @@ class Index
     public function index($name = 'thinkphp')
     {
       	$tester = model('Tester');
-      	$data = $tester->where('id',6)->find();
+//     	$data = $tester->where('id',6)->find();
 //	$tester->name = 'earnit';
-//	$tester->select();
-//	$data = $tester->data;
+	$tester->select();
+	$data = $tester->data;
 	 return view('index',[
 	   'data' => $data,
 	 ]);
@@ -27,5 +27,9 @@ class Index
     public function getdata()
     {
 	return ['msg'=>'ajax test!'];
+    }
+    public function hook()
+    {
+	return view('hook');	
     }
 }

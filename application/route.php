@@ -20,5 +20,6 @@ return [
     ],
     'hhh/[:name]'	=> 'index/index/hello',
     'select'	=> 'index/index/database',
-    'ajax'	=> 'index/index/ajax'
+    'ajax'	=> 'index/index/ajax',
+    'hook'	=> 'index/index/hook',
 ];
